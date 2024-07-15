@@ -1,5 +1,9 @@
 body{
    text-align: center; 
+   align-items: center;
+   display: flex;
+   justify-items: center;
+   flex-direction: column;
 }
 .content {
     display: flex;
@@ -41,10 +45,9 @@ body{
     border-radius: 50%;
     background-color: black;
     color: white;
-    position: fixed;
-    top: 230px;
-    left: 43%;
     display: flex;
+    position: relative;
+    top: -350px;
     justify-content: center;
     flex-direction: row;
 }
@@ -78,11 +81,26 @@ body{
 }
 .innercircle {
     position: relative;
-    top: -290px;
+    top: -280px;
     left: 4px;
     color: white;
     z-index: 2;
 }
 .box:hover {
     box-shadow: 0 0 0 2px rgb(36, 35, 35);
+}
+/* #start {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(200, 27, 27);
+    font-size: 25px;
+    border-radius: 6px;
+    position: relative;
+    top: -250px;
+    color: white;
+    cursor: pointer;
+} */
+.button {
+    position: relative;
+    top: -200px;
 }

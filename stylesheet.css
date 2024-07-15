@@ -39,15 +39,15 @@ body{
     background-color: rgb(49, 44, 44);
 }
 .circle {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border: 10px black;
     border-radius: 50%;
     background-color: black;
     color: white;
     display: flex;
     position: relative;
-    top: -350px;
+    top: -310px;
     justify-content: center;
     flex-direction: row;
 }
@@ -81,10 +81,10 @@ body{
 }
 .innercircle {
     position: relative;
-    top: -280px;
-    left: 4px;
+    top: -230px;
     color: white;
     z-index: 2;
+    font-size: 20px !important;
 }
 .box:hover {
     box-shadow: 0 0 0 2px rgb(36, 35, 35);
@@ -102,5 +102,53 @@ body{
 } */
 .button {
     position: relative;
-    top: -200px;
+    top: -150px;
 }
+
+@media screen and (max-width: 492px) {
+    .box {
+        width: 180px;
+        height: 180px;
+    }
+    .circle {
+        top: -300px;
+    }
+    .innercircle {
+        font-size: 15px !important;
+    }
+  }
+
+  @media screen and (max-width: 397px) {
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+    .circle {
+        top: -260px;
+    }
+    .innercircle {
+        top: -190px;
+    }
+  }
+  
+@media screen and (max-width: 311px) {
+    .box {
+        width: 120px;
+        height: 120px;
+    }
+    .circle {
+        top: -200px;
+        height: 100px;
+        width: 100px;
+    }
+    .innercircle {
+        top: -150px;
+        font-size: 10px !important;
+    }
+    .button {
+        top: -100px;
+    }
+    .r, .y, .b, .g {
+        margin-top: 70px;
+    }
+  }
